@@ -51,22 +51,33 @@ int main()
     
     printf("Area de la base:\n");
     scanf("%f", &area);
+    while ((c = getc(stdin)) != '\n' && c != EOF); //Esta linea hace flush a la entrada
     printf("la altura:\n");
     scanf("%f", &altura);
+    while ((c = getc(stdin)) != '\n' && c != EOF); //Esta linea hace flush a la entrada
     printf("Volumen de la piramide es: %f",volumenDePiramide(area, altura));
     
     printf("\n\nDame el primer lado\n");
     scanf("%f",&a);
+    while ((c = getc(stdin)) != '\n' && c != EOF); //Esta linea hace flush a la entrada
     printf("Dame el segundo lado\n");
     scanf("%f",&l);
+    while ((c = getc(stdin)) != '\n' && c != EOF); //Esta linea hace flush a la entrada
     printf("Dame la altura\n");
     scanf("%f",&h);
+    while ((c = getc(stdin)) != '\n' && c != EOF); //Esta linea hace flush a la entrada
     printf("El volumen del paralelepipedo es de %f \n",VParale(a,l,h));
 
     printf("\n\nDame el Radio del cilindro");
     scanf("%f",&r);
+    while ((c = getc(stdin)) != '\n' && c != EOF); //Esta linea hace flush a la entrada
     printf("Dame la altura");
     scanf("%f",&h1);
+    while ((c = getc(stdin)) != '\n' && c != EOF); //Esta linea hace flush a la entrada
     printf("El volumen del cilindro es de %f \n",Vcili(l,h1));    
-    
+
+    printf("\nIngrese la medida de un lado del cubo: ");
+    scanf("%f",&lado);
+    while ((c = getc(stdin)) != '\n' && c != EOF); //Esta linea hace flush a la entrada
+    printf("El volumen del cubo es de %f \n",volumen_cubo(l,h1));
 }
