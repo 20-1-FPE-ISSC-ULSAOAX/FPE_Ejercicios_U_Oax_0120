@@ -55,4 +55,18 @@ int main()
     scanf("%f", &altura);
     printf("Volumen de la piramide es: %f",volumenDePiramide(area, altura));
     
+    printf("\n\nDame el primer lado\n");
+    scanf("%f",&a);
+    printf("Dame el segundo lado\n");
+    scanf("%f",&l);
+    printf("Dame la altura\n");
+    scanf("%f",&h);
+    printf("El volumen del paralelepipedo es de %f \n",VParale(a,l,h));
+
+    printf("\n\nDame el Radio del cilindro");
+    scanf("%f",&r);
+    printf("Dame la altura");
+    scanf("%f",&h1);
+    printf("El volumen del cilindro es de %f \n",Vcili(l,h1));    
+    
 }
