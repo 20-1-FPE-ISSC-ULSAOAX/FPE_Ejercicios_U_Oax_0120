@@ -10,12 +10,13 @@ float volumenDeEsfera(float radio);
 float volumenDePiramide(float area, float altura);
 float VParale(float x,float y,float t);
 float Vcili(float t,float v);
+float volumen_cubo(float );
 
 int main()
 {
     char c;
     float radio_base_cono, altura_cono, radio_esfera, altura_prisma, area_base_prisma;
-    float area, altura;
+    float area, altura, a, l, h, r, h1;
     printf("Programa que calcula el volumen de cuerpos geometricos\n");
     printf("\n");
     printf("db    db  .d88b.  db      db    db .88b  d88. d88888b d8b   db \n");
@@ -79,5 +80,5 @@ int main()
     printf("\nIngrese la medida de un lado del cubo: ");
     scanf("%f",&lado);
     while ((c = getc(stdin)) != '\n' && c != EOF); //Esta linea hace flush a la entrada
-    printf("El volumen del cubo es de %f \n",volumen_cubo(l,h1));
+    printf("El volumen del cubo es de %f \n", volumen_cubo(lado));
 }
