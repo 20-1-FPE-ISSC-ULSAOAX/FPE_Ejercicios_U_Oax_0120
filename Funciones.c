@@ -22,13 +22,23 @@ float volumenDePiramide(float area, float altura) {
 }
 
 float VParale(float x,float y,float t)
-    {
+{
     	float volp=x*y*t;
     	return volp;
-	}
+}
 
 float Vcili(float t,float v)
-    {
+{
     	float volc=t*v*M_PI;
     	return volc;
-	}
+}
+
+float volumen_cubo(float arista)
+{
+     return(pow(arista,3));
+}
+
+float volumen_cilindro(float radio, float altura)
+{
+	return((radio*radio)*PI*altura);
+}
