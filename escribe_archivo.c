@@ -63,7 +63,7 @@ int main(int argc, char const *argv[])
         trim(linea);
         //agregarle un "0" al inicio y "@ulsaoaxaca.edu.mx" al final
         //imprimir la cadena construida
-        //if(strlen(linea) > 0)
+        if(strlen(linea) > 0)
             printf("0%s@ulsaoaxaca.edu.mx\n" , linea) ;
     }
     fclose(aarchivo);
